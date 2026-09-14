@@ -111,7 +111,7 @@ CONFIG = {
     # 💾 НАСТРОЙКИ СОХРАНЕНИЯ ОПЫТА И АВТОБЭКАПА
     "RESUME_TRAINING": True,
     "CHECKPOINT_PATH": "data/results/learned_brain_synapses.pt",
-    "AUTOSAVE_INTERVAL_SEC": 15.0  # Интервал автосохранения в реальном времени (секунды)
+    "AUTOSAVE_INTERVAL_SEC": 15.0
 }
 
 
@@ -159,7 +159,7 @@ def execute_fly_action(action_type, tx, ty, extra_param=None):
 
 
 # ==============================================================================
-#                 🧠 СИМУЛЯЦИЯ МОЗГА С ВЫСОКИМИ КОГНИТИВНЫМИ СПОСОБНОСТЯМИ
+#                                🧠 СИМУЛЯЦИЯ МОЗГА
 # ==============================================================================
 def run_all_benchmarks(**kwargs):
     logger = kwargs.get('logger')
