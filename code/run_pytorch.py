@@ -285,7 +285,6 @@ def run_all_benchmarks(**kwargs):
     except KeyboardInterrupt:
         print("\n⚠️ Прерывание симуляции пользователем.")
     finally:
-        # Финальное сохранение накопленного опыта на диск перед выходом
         os.makedirs(os.path.dirname(CONFIG["CHECKPOINT_PATH"]), exist_ok=True)
         torch.save({
             "synapses": synapses,
